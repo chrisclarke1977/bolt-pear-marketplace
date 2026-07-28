@@ -1,0 +1,33 @@
+{
+  "name": "pearmarket",
+  "productName": "PearMarket",
+  "version": "1.0.0",
+  "upgrade": "pear://",
+  "description": "A peer-to-peer marketplace built on Pear (Holepunch) with over-the-air updates",
+  "license": "Apache-2.0",
+  "author": "",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "start": "electron-forge start -- --no-updates",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5"
+  }
+}
